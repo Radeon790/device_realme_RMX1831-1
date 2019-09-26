@@ -161,5 +161,8 @@ PRODUCT_PACKAGES += \
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
-$(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)   
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.RMX1831
 
+$(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)
