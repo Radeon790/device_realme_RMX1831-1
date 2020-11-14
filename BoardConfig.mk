@@ -19,6 +19,8 @@ DEVICE_PATH := device/realme/RMX1831
 
 BOARD_VENDOR := realme
 
+BUILD_WITHOUT_VENDOR := true 
+
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := RMX1831,RMX1833
 
