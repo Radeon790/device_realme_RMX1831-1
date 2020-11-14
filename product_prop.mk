@@ -17,7 +17,7 @@
 
 # Walleye identification
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.build.fingerprint=google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
+    ro.build.fingerprint=google/sunfish/sunfish:11/RP1A.201105.002/6869500:user/release-keys
 
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
