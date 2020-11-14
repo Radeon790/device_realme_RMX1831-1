@@ -27,6 +27,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 debug.sf.enable_gl_backpressure=1
 rild.libpath=mtk-ril.so
 rild.libargs=-d /dev/ttyC0
+ro.hardware.egl=mali 
 
 # performance
 ro.mtk_perf_simple_start_win=1
