@@ -145,3 +145,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/vintf/manifest.xml
 
 $(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)
+
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 28
+PRODUCT_EXTRA_VNDK_VERSIONS := 28

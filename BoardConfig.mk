@@ -58,7 +58,7 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # Enable dexpreopt to speed boot time
-WITH_DEXPREOPT := true
+#WITH_DEXPREOPT := true
 
 # Build hax
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
@@ -123,7 +123,7 @@ TARGET_NO_RECOVERY := false
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6771
 
 # Vendor
-TARGET_COPY_OUT_VENDOR := vendor
+#TARGET_COPY_OUT_VENDOR := vendor
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
@@ -161,6 +161,6 @@ TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE := true
 TARGET_LD_SHIM_LIBS := /system/lib/libshowlogo.so|libshim_showlogo.so
 
 # Vndk
-BOARD_VNDK_VERSION := current
-PRODUCT_EXTRA_VNDK_VERSIONS := 28
+#BOARD_VNDK_VERSION := current
+#PRODUCT_EXTRA_VNDK_VERSIONS := 28
 
