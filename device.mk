@@ -84,6 +84,11 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0_system \
 
+# Tethering
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
+
+
 # KPOC
 PRODUCT_PACKAGES += \
     libsuspend
