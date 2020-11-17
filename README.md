@@ -1,35 +1,8 @@
-# ProjectSakura Device Tree
+# LineageOS Device Tree
+STATUS: STABLE
+
 
 The Realme U1 (codenames _"RMX1831"_ and _"RMX1833"_ ) is a mid-range smartphone from Realme, announced in November 2018.
-
-**Working**:
-
-1. Boots
-2. RIL(Calls,SMS,Data)
-3. Wi-Fi
-4. Bluetooth
-5. Camera
-6. Audio
-7. Sensors
-8. Flashlight
-9. Brightness
-10. GPS
-11. Gcam
-12. Hotspot
-13. USB Tethering
-14. DT2W
-15. Offline Charging
-
-**Not working**:
-
-1. Selinux is permissive.
-2. Video codec issues in all Chromium based browsers (minimal).
-3. VoLTE.
-4. No face Unlock.
-5. Inbuilt screen recorder
-
-## Downloads
-
 
 
 ## Device specifications
@@ -63,9 +36,9 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
 # repo init
 
-To initialize your local repository using the Pixel Experience trees to build ROM, use a command like this:
+To initialize your local repository, use a command like this:
 
-    repo init -u https://github.com/PixelExperience/manifest -b ten-plus
+    repo init -u git://github.com/LineageOS/android.git -b lineage-18.0
 
 # repo sync
 
@@ -82,7 +55,9 @@ Using 50GB ccache and 15GB RAM (for jack).
 ## To Build ##
 ---------------
 
-Build the Pixel Experience Plus ROM using below command.
+Build the ROM using below command.
 
-    . build/envsetup.sh; lunch aosp_RMX1831-userdebug; mka bacon -j$(nproc --all)
+    . build/envsetup.sh
+    lunch lineage_RMX1831-userdebug
+    mka bacon -j$(nproc --all)
 
