@@ -157,5 +157,9 @@ PRODUCT_BOOT_JARS += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common
-    
+
+# RCS
+PRODUCT_PACKAGES += \
+    RcsService
+
 $(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)   
