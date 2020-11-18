@@ -162,4 +162,9 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     RcsService
 
+# ImsInit
+PRODUCT_PACKAGES += \
+    ImsInit
+
 $(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)   
+
