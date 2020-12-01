@@ -10,7 +10,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-</resources>
+
 <!-- NOTE: Many variables that used to be in this file have been migrated to
      CarrierConfigManager.java. Please consider whether new variables belong
      there before adding to this file. Variables here should be more closely
@@ -18,6 +18,7 @@
 <!-- Phone app resources that may need to be customized
      for different hardware or product builds. -->
     <!-- Flag indicating if hac is enabled -->
+<resources>
     <bool name="hac_enabled">true</bool>
 <!-- Phone app resources that may need to be customized
      for different hardware or product builds. -->
