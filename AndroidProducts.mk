@@ -15,4 +15,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_RMX1831.mk
+    $(LOCAL_DIR)/potato_RMX1831.mk
