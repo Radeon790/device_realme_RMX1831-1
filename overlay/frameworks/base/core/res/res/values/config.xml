@@ -211,15 +211,6 @@
     -->
      <bool name="config_wifiDisplaySupportsProtectedBuffers">false</bool>
 
-    <!-- Boolean indicating whether the wifi chipset has background scan support -->
-     <bool name="config_wifi_background_scan_support">false</bool>
-
-    <!-- Wifi driver supports batched scan -->
-     <bool name="config_wifi_batched_scan_supported">false</bool>
-
-    <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
-     <bool name="config_wifi_dual_band_support">false</bool>
-
     <!-- Boolean indicating whether single radio chain scan results are to be used for network selection -->
      <bool name="config_wifi_framework_use_single_radio_chain_scan_results_network_selection">false</bool>
 
@@ -319,19 +310,9 @@
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
      <integer name="config_shutdownBatteryTemperature">680</integer>
 
-    <!-- Integer parameters of the wifi to cellular handover feature
-         wifi should not stick to bad networks -->
-     <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_24GHz">-85</integer>
-     <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz">-82</integer>
-     <integer name="config_wifi_framework_wifi_score_low_rssi_threshold_24GHz">-73</integer>
-     <integer name="config_wifi_framework_wifi_score_low_rssi_threshold_5GHz">-70</integer>
 
     <!-- Regex of wired ethernet ifaces -->
      <string name="config_ethernet_iface_regex">eth\\d</string>
-
-    <!-- Configure wifi tcp buffersizes in the form:
-         rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
-     <string name="config_wifi_tcp_buffers">524288,1048576,2097152,262144,524288,1048576</string>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
          in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
