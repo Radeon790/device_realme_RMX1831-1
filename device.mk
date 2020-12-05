@@ -90,6 +90,14 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0_system \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0_system \
+#WiFi
+PRODUCT_PACKAGES += \
+    hostapd \
+    libwpa_client \
+    libwifi-hal \
+    wpa_supplicant \
+    wpa_supplicant.conf \
+    WifiOverlay
 
 # Tethering
 PRODUCT_PACKAGES += \
