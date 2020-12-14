@@ -1,4 +1,4 @@
-package org.lineageos.oppo.imsinit;
+package org.lineageos.realme.imsinit;
 
 import android.app.Service;
 import android.content.Context;
@@ -74,4 +74,3 @@ public class PhoneStateService extends Service {
     
     }
 }
-
