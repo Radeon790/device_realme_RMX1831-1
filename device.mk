@@ -186,6 +186,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
        $(LOCAL_PATH)/permissions/privapp-permissions-me.phh.treble.app.xml:system/etc/permissions/privapp-permissions-me.phh.treble.app.xml
 
+# Overlay from mtk-telephony-ext
+include vendor/mediatek/hardware/telephony-ext/overlay.mk
 
-$(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)   
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext \
+    mtk-telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
+
+$(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk) 
+
 
