@@ -10,11 +10,8 @@ typeattribute kpoc_charger coredomain;
 # Purpose : Start kpoc_charger
 init_daemon_domain(kpoc_charger)
 
-#permissive kpoc_charger;
-
 # Use light HAL
 hal_client_domain(kpoc_charger, hal_light)
-hal_client_domain(kpoc_charger, hal_health)
 
 # Purpose : Interact with kernel to perform kpoc_charger
 allow kpoc_charger block_device:dir search;
@@ -37,7 +34,7 @@ allow kpoc_charger rootfs:file r_file_perms;
 allow kpoc_charger sysfs_leds:dir r_dir_perms;
 
 # Purpose: add sepolicy for sysfs_batteryinfo
-allow kpoc_charger sysfs_batteryinfo:dir r_dir_perms;
+# r_dir_file(kpoc_charger, sysfs_batteryinfo)
 allow kpoc_charger sysfs_batteryinfo:dir r_dir_perms;
 
 # Purpose: add sepolicy for sysfs_power
