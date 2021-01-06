@@ -6,10 +6,6 @@ ro.build.keystore.path=/sdcard/.lii/
 # system.prop for generic sdk
 #
 
-rild.libpath=mtk-ril.so
-rild.libargs=-d /dev/ttyC0
-
-
 # MTK, Infinity, 20090720 {
 wifi.interface=wlan0
 # MTK, Infinity, 20090720 }
@@ -51,8 +47,6 @@ persist.camera.HAL3.enabled=1
 
 # Graphics
 debug.sf.enable_gl_backpressure=1
-rild.libpath=mtk-ril.so
-rild.libargs=-d /dev/ttyC0
 
 # performance
 ro.mtk_perf_simple_start_win=1
