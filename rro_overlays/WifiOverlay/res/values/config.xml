@@ -44,7 +44,7 @@
     <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
 
     <!-- Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">Realme 1</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Realme U1</string>
 
 
 </resources>
