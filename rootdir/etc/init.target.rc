@@ -7,6 +7,9 @@ on init
     mount none /dev/null vendor/etc/init/android.hardware.light@2.0-service-mediatek.rc bind
     mount none /dev/null vendor/lib/hw/android.hardware.light@2.0-impl-mediatek.so bind
     mount none /dev/null vendor/lib64/hw/android.hardware.light@2.0-impl-mediatek.so bind
+
+    # bind mount libmtk-ril.so
+    mount none /system/lib64/libmtk-ril.so /vendor/lib64/libmtk-ril.so bind
    
     # Force disable ViLTE support
     setprop persist.vendor.vilte_support 0
