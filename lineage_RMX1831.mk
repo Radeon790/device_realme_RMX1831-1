@@ -52,4 +52,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX1831" \
     PRIVATE_BUILD_DESC="full_oppo6771_18611-user 9 PPR1.180610.011 eng.root.20200915.143154 release-keys"
 
-BUILD_FINGERPRINT := "google/sunfish/sunfish:11/RQ1A.201205.008/6943376:user/release-keys"
+BUILD_FINGERPRINT := "google/sunfish/sunfish:S/SPP1.210122.020.A3/7145137:user/release-keys"
