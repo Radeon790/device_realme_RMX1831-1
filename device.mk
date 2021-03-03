@@ -180,11 +180,9 @@ PRODUCT_PACKAGES += \
 
 # ImsInit
 PRODUCT_PACKAGES += \
-    ImsInit
-
-# TrebleIMS
-PRODUCT_PACKAGES += \
-    TrebleApp
+    ImsInit \
+    TrebleApp \
+    phhims
 
 PRODUCT_COPY_FILES += \
        $(LOCAL_PATH)/permissions/interfaces.xml:system/etc/permissions/interfaces.xml
