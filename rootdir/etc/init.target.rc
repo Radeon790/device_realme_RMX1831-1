@@ -1,4 +1,8 @@
 on init
+    
+    # Delete Keystore OEM Hals
+    rm vendor/lib64/hw/keystore.mt6771.so
+    rm vendor/lib64/hw/keystore.oppo6771_17065.so
 
     # Disable mediatek lights, use custom ones from android.
     mount none /dev/null vendor/lib/hw/lights.mt6771.so bind
