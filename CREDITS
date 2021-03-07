@@ -1,0 +1,28 @@
+1. Offline charging fix (missing symbols):
+
+Author: SamarV-121 samarvispute121@gmail.com
+Link: https://github.com/xiaomi-mt6765/android_device_xiaomi_mt6765-common/commit/087a22ccee856edb1d0e1150e3759dbbf95346f1
+
+2. DT2W:
+
+Author: SamarV-121 samarvispute121@gmail.com
+
+3. Sepolicy:
+
+Author: SamarV-121 samarvispute121@gmail.com
+Link: https://github.com/xiaomi-mt6765/android_device_xiaomi_mt6765-common/tree/lineage-17.1/sepolicy/private
+
+4. zram:
+
+Author: Realme/Oppo Dev team
+Link: Taken from stock dump
+
+5. Logger script:
+
+Author: Antoin O'Leary
+Link: https://github.com/aoleary/device_lge_g4-common/commit/073490b8a5056d5d59c2bea04d6648f423db3a35
+
+6. oppo_tfa98xx_fw_update (speaker fix)
+
+Author: GSI community (main: Phhusson)
+Link: https://github.com/phhusson/treble_experimentations/issues/1139
