@@ -27,37 +27,4 @@ Features| Fingerprint (rear-mounted), accelerometer, proximity, compass
 ## Device picture
 
 ![Realme U1](https://images-na.ssl-images-amazon.com/images/I/71G%2BlExqsrL._AC_SX679_.jpg "Realme U1")
-
-## Getting Started with Pixel Experience Plus ##
----------------
-
-To get started with ROM compiling, you'll need to get
-familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
-
-# repo init
-
-To initialize your local repository, use a command like this:
-
-    repo init -u git://github.com/LineageOS/android.git -b lineage-18.0
-
-# repo sync
-
-Then to sync up:
-
-    repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
-
-# ccache and jack
-
-Using 50GB ccache and 15GB RAM (for jack).
-
-    export USE_CCACHE=1; export USE_CCACHE_EXEC=$(command -v ccache); ccache -M 50G; export ANDROID_JACK_VM_ARGS="-Xmx15g -Dfile.encoding=UTF-8 -XX:+TieredCompilation";
-
-## To Build ##
----------------
-
-Build the ROM using below command.
-
-    . build/envsetup.sh
-    lunch lineage_RMX1831-userdebug
-    mka bacon -j$(nproc --all)
-
+ 
