@@ -25,10 +25,6 @@ PRODUCT_PACKAGES += \
 # Audio policy configuration
 USE_XML_AUDIO_POLICY_CONF := 1
 
-# VNDK
-PRODUCT_TARGET_VNDK_VERSION := 28
-PRODUCT_EXTRA_VNDK_VERSIONS := 28
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
