@@ -77,7 +77,8 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.recovery.mt6771.rc \
     init.recovery.usb.rc \
-    set_zram.sh
+    set_zram.sh \
+    perf_profile.sh
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -85,10 +86,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.3-service.clearkey \
     android.hardware.drm@1.1-service.widevine
-
-# GCamGo
-PRODUCT_PACKAGES += \
-    GCam
 
 # HIDL
 PRODUCT_PACKAGES += \

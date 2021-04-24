@@ -1,2 +1,5 @@
 # Vtservice
 /system/bin/vtservice   u:object_r:vtservice_exec:s0
+
+# Misc
+/system/bin/perf_profile\.sh	u:object_r:perf_profile_exec:s0
