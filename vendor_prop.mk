@@ -167,6 +167,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.vendor.mtk_modem_monitor_support=1 \
     ro.vendor.mtk_nn.option=B \
     ro.vendor.mtk_nn_quant_preferred=1 \
+    ro.vendor.mtk_nn_support=1 \
     ro.vendor.mtk_oma_drm_support=1 \
     ro.vendor.mtk_omacp_support=1 \
     ro.vendor.mtk_pq_color_mode=1 \
