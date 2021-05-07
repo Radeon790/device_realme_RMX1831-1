@@ -115,6 +115,9 @@ TARGET_USES_INTERACTION_BOOST := true
 # Backlight Path
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
+# MTK-SEPolicy
+include device/mediatek/sepolicy/sepolicy.mk
+
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
