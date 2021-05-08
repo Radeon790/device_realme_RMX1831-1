@@ -30,7 +30,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml
 
 
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -174,3 +173,5 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)   
 
+# Parts
+$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
