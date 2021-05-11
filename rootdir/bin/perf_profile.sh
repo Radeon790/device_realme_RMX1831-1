@@ -21,19 +21,19 @@ case $1 in
 	echo 0-3 >/dev/cpuset/restricted/cpus
 
 	# Lock gpu frequency
-	echo 806000 > /proc/gpufreq/gpufreq_opp_freq
+	echo 800000 > /proc/gpufreq/gpufreq_opp_freq
 
 	# Disable ppm
 	echo 0 > /proc/ppm/enabled
 
 	## Limit minimum cpu frequency
 	# big cluster
-	echo 1 2050000 >/proc/ppm/policy/hard_userlimit_max_cpu_freq
-	echo 1 1796000 >/proc/ppm/policy/hard_userlimit_min_cpu_freq
+	echo 1 1989000 >/proc/ppm/policy/hard_userlimit_max_cpu_freq
+	echo 1 1781000 >/proc/ppm/policy/hard_userlimit_min_cpu_freq
 
 	# LITTLE cluster
-	echo 0 2000000 >/proc/ppm/policy/hard_userlimit_max_cpu_freq
-	echo 0 1866000 >/proc/ppm/policy/hard_userlimit_min_cpu_freq
+	echo 0 1989000 >/proc/ppm/policy/hard_userlimit_max_cpu_freq
+	echo 0 1846000 >/proc/ppm/policy/hard_userlimit_min_cpu_freq
 	;;
 0)
 	echo 0 >/sys/module/ged/parameters/gx_game_mode
@@ -57,11 +57,11 @@ case $1 in
 	echo 1 > /proc/ppm/enabled
 
 	# Big cluster
-	echo 1 2050000 >/proc/ppm/policy/hard_userlimit_max_cpu_freq
-	echo 1 730000 >/proc/ppm/policy/hard_userlimit_min_cpu_freq
+	echo 1 1989000 >/proc/ppm/policy/hard_userlimit_max_cpu_freq
+	echo 1 793000 >/proc/ppm/policy/hard_userlimit_min_cpu_freq
 
 	# Little cluster
-	echo 0 2000000 >/proc/ppm/policy/hard_userlimit_max_cpu_freq
-	echo 0 500000 >/proc/ppm/policy/hard_userlimit_min_cpu_freq
+	echo 0 1989000 >/proc/ppm/policy/hard_userlimit_max_cpu_freq
+	echo 0 793000 >/proc/ppm/policy/hard_userlimit_min_cpu_freq
 	;;
 esac
