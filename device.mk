@@ -251,6 +251,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RcsService
 
+# libcurl
+PRODUCT_PACKAGES += \
+    libcurl
+
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
