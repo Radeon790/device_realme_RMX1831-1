@@ -52,6 +52,9 @@ TARGET_SCREEN_WIDTH := 1080
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
+# System Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 ## Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive

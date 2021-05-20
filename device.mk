@@ -143,9 +143,12 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
 
-#RCS
+# RCS
 PRODUCT_PACKAGES += \
     RcsService
+
+# Properties
+-include $(LOCAL_PATH)/vendor_prop.mk
 
 $(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)   
 

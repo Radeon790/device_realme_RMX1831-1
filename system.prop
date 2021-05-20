@@ -1,0 +1,86 @@
+ro.build.keystore.path=/sdcard/.lii/
+#
+# from device/oppo/oppo6771_18611/system.prop
+#
+#
+# system.prop for generic sdk
+#
+
+rild.libpath=mtk-ril.so
+rild.libargs=-d /dev/ttyC0
+
+
+# MTK, Infinity, 20090720 {
+wifi.interface=wlan0
+# MTK, Infinity, 20090720 }
+
+# MTK, mtk03034, 20101210 {
+ro.mediatek.wlan.wsc=1
+# MTK, mtk03034 20101210}
+# MTK, mtk03034, 20110318 {
+ro.mediatek.wlan.p2p=1
+# MTK, mtk03034 20110318}
+
+# Camera
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
+vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
+
+# MTK, mtk03034, 20101213 {
+mediatek.wlan.ctia=0
+# MTK, mtk03034 20101213}
+
+
+#
+wifi.tethering.interface=ap0
+#
+
+ro.opengles.version=196610
+#ro.kernel.qemu=1
+#ro.kernel.qemu.gles=0
+
+wifi.direct.interface=p2p0
+#dalvik.vm.heapgrowthlimit=256m
+#dalvik.vm.heapsize=512m
+
+# USB MTP WHQL
+ro.sys.usb.mtp.whql.enable=0
+
+# Camera
+persist.camera.HAL3.enabled=1
+
+# Graphics
+debug.sf.enable_gl_backpressure=1
+rild.libpath=mtk-ril.so
+rild.libargs=-d /dev/ttyC0
+
+# performance
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# disable ipo for development
+sys.ipo.disable=1
+
+# Video Acceleration Enabled And HW debugging
+video.accelerate.hw=1
+debug.sf.hw=1
+debug.performance.tuning=1
+debug.egl.profiler=1 
+debug.egl.hw=1
+debug.composition.type=gpu 
+ro.surface_flinger.running_without_sync_framework=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.max_virtual_display_dimension=4096
+
+# LCD density
+ro.sf.lcd_density=480
+
+# Granular Volume Steps
+ro.config.vc_call_vol_steps=7
+ro.config.alarm_vol_steps=15
+ro.config.system_vol_steps=15
+ro.config.ring_notification_vol_steps=15
+
+# Charger
+ro.charger.enable_suspend=true
