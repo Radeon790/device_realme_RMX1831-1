@@ -112,6 +112,11 @@ TARGET_USES_INTERACTION_BOOST := true
 # Backlight Path
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
+# HIDL
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
+
 # VNDK
 BOARD_VNDK_RUNTIME_DISABLE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
