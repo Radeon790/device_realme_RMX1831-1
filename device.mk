@@ -262,6 +262,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcurl
 
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
