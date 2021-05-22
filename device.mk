@@ -274,6 +274,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsensorndkbridge
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_nvram
+
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
