@@ -179,7 +179,10 @@ PRODUCT_PACKAGES += \
 # Apex
 PRODUCT_HOST_PACKAGES += \
     libandroidicu
-
+    
+PRODUCT_PACKAGES += \
+    libandroidicu
+    
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/configstore@1.1.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/configstore@1.1.policy \
