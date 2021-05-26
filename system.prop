@@ -125,3 +125,6 @@ ro.sys.fw.bg_apps_limit=32
 
 # screen recording
 debug.sf.enable_hwc_vds=0
+
+# nightlight 
+ro.surface_flinger.running_without_sync_framework=true
