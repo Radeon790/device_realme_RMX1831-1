@@ -16,11 +16,10 @@
 #
 
 # mt6771 platform boardconfig
+
 DEVICE_PATH := device/realme/RMX1831
 
 BOARD_VENDOR := realme
-
-# TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := RMX1831,RMX1833
@@ -63,7 +62,7 @@ TARGET_OTA_ALLOW_NON_AB := true
 BUILD_BROKEN_DUP_RULES := true
 
 
-## Kernel
+# Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x40078000

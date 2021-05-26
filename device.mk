@@ -151,14 +151,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/google/pixel
-
-# Product properties
--include $(LOCAL_PATH)/product_prop.mk
-
 # fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/fstab.mt6771:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/fstab.mt6771
@@ -177,17 +169,10 @@ PRODUCT_PACKAGES += \
 
 # ImsInit
 PRODUCT_PACKAGES += \
-    ImsInit \
-    TrebleApp \
-    phhims
+    ImsInit
 
 PRODUCT_COPY_FILES += \
        $(LOCAL_PATH)/permissions/interfaces.xml:system/etc/permissions/interfaces.xml
-
-
-# Privapp-permissions whitelist for PhhTrebleApp
-PRODUCT_COPY_FILES += \
-       $(LOCAL_PATH)/permissions/privapp-permissions-me.phh.treble.app.xml:system/etc/permissions/privapp-permissions-me.phh.treble.app.xml
 
 
 $(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)   
