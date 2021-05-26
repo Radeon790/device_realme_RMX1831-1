@@ -175,3 +175,6 @@ $(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)
 
 # Parts
 $(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
+
+# Product properties
+-include $(LOCAL_PATH)/product_prop.mk
