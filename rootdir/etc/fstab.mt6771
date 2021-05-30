@@ -97,4 +97,3 @@
 
 
 /dev/block/platform/bootdevice/by-name/otp /otp emmc defaults defaults
->>>>>>> parent of e23788b... RMX1831: fstab: Label and Cleanup
