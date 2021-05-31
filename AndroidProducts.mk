@@ -16,4 +16,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_RMX1831.mk
+    $(LOCAL_DIR)/spark_RMX1831.mk
