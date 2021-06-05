@@ -1,0 +1,2 @@
+allow mnld system_data_file:sock_file { getattr  write };
+allow mnld system_data_file:sock_file { getattr  write };

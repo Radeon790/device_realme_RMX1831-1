@@ -1,0 +1,5 @@
+allow rild shell_exec:file { execute  execute_no_trans  getattr  read };
+allow rild system_prop:property_service { set };
+allow rild toolbox_exec:file { execute  execute_no_trans  read };
+allow rild shell_exec:file { execute  execute_no_trans  getattr  read };
+allow rild toolbox_exec:file { execute  execute_no_trans  read };

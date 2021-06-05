@@ -1,0 +1,5 @@
+allow hal_fingerprint_oppo fingerprintd_data_file:dir { add_name  remove_name  search  write };
+allow hal_fingerprint_oppo fingerprintd_data_file:file { create  rename  unlink  write };
+allow hal_fingerprint_oppo init:binder { call };
+allow hal_fingerprint_oppo fingerprintd_data_file:dir { remove_name  search };
+allow hal_fingerprint_oppo init:binder { call };

@@ -1,0 +1,10 @@
+allow untrusted_app app_data_file:file { execute };
+allow untrusted_app proc:file { getattr  open  read };
+allow untrusted_app proc_stat:file { getattr  open };
+allow untrusted_app proc_zoneinfo:file { getattr  open  read };
+allow untrusted_app virtual_ab_prop:file { getattr  open };
+allow untrusted_app app_data_file:file { execute };
+allow untrusted_app proc:file { open  read };
+allow untrusted_app proc_stat:file { getattr  open };
+allow untrusted_app proc_zoneinfo:file { getattr  open  read };
+allow untrusted_app virtual_ab_prop:file { open };

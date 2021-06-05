@@ -1,0 +1,2 @@
+allow mtk_agpsd system_data_file:sock_file { getattr  write };
+allow mtk_agpsd system_data_file:sock_file { getattr  write };

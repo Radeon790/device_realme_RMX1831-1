@@ -1,7 +1,14 @@
-allow init servicemanager:binder { call transfer };
-
-# Allow init to change owner of /sys/module/ged
-allow init sysfs_ged:file { w_file_perms setattr };
-
-# Allow init to change owner of /proc/cpufreq
-allow init proc_cpufreq:file { w_file_perms setattr };
+allow init hal_fingerprint_oppo:binder { call  transfer };
+allow init proc:file { setattr  write };
+allow init shell_exec:file { execute_no_trans };
+allow init surfaceflinger:binder { call };
+allow init sysfs:file { setattr };
+allow init sysfs_leds:file { read };
+allow init system_file:file { execute_no_trans };
+allow init system_server:binder { call };
+allow init vendor_file:file { execute  execute_no_trans };
+allow init vendor_shell_exec:file { execute_no_trans };
+allow init vendor_toolbox_exec:file { execute_no_trans };
+allow init hal_fingerprint_oppo:binder { call };
+allow init sysfs_leds:file { read };
+allow init system_server:binder { call };
